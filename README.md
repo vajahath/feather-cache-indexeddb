@@ -1,6 +1,6 @@
 # feather-cache-indexeddb
 
-IndexedDB Driver For feather-cache Storage.
+IndexedDB Driver For [feather-cache](https://www.npmjs.com/package/feather-cache) Storage.
 
 [![npm](https://img.shields.io/npm/v/feather-cache-indexeddb.svg)](https://www.npmjs.com/package/feather-cache-indexeddb)
 [![Travis](https://img.shields.io/travis/vajahath/feather-cache-indexeddb.svg)](https://travis-ci.org/vajahath/feather-cache-indexeddb)
@@ -10,7 +10,11 @@ IndexedDB Driver For feather-cache Storage.
 
 <!-- [![npm](https://img.shields.io/npm/dt/feather-cache-indexeddb.svg)]() -->
 
-![](https://cataas.com/cat)
+## What
+
+> This module requires IndexedDB supported environments (like Browser) to run properly.
+
+This module enables [feather-cache](https://www.npmjs.com/package/feather-cache) storage to work with IndexedDB.
 
 ## Install
 
@@ -28,17 +32,24 @@ yarn add feather-cache-indexeddb
 
 You don't have to install type definitions for typescript. It's built in.
 
-## How it works
-
-Optional
-
 ## Usage
 
-Describe usage
+```ts
+idbFeatherCacheDriver(maxAgeInMs);
+```
 
-## Change log
+Default `maxAgeInMs` (number) is 5 min.
 
-brief change log
+```ts
+import { FeatherCache } from 'feather-cache';
+import { idbFeatherCacheDriver } from 'feather-cache-indexeddb';
+// or
+const { FeatherCache } = require('feather-cache');
+const { idbFeatherCacheDriver } = require('feather-cache-indexeddb');
+
+// init
+const storage = new FeatherCache(idbFeatherCacheDriver(60 * 1000 * 5));
+```
 
 Version of [ts-np-generator](https://github.com/vajahath/generator-ts-np) used: [![used version of ts-np generator](https://img.shields.io/badge/ts--np-v2.0.1-a5a5a5.svg?style=flat-square)](https://github.com/vajahath/generator-ts-np)
 
