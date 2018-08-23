@@ -1,6 +1,6 @@
 {
   "name": "feather-cache-indexeddb",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "IndexedDB Driver For feather-cache Storage.",
   "homepage": "https://github.com/vajahath/feather-cache-indexeddb#readme",
   "author": "Vajahath Ahmed <vajuoff.1@gmail.com> (https://twitter.com/vajahath7)",
