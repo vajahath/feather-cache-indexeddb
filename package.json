@@ -14,7 +14,7 @@
     "yarn.lock",
     "package-lock.json"
   ],
-  "keywords": [],
+  "keywords": ["feather-cache", "driver", "cache"],
   "license": "MIT",
   "scripts": {
     "build": "gulp build",
