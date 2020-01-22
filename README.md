@@ -51,7 +51,7 @@ const { idbFeatherCacheDriver } = require('feather-cache-indexeddb');
 const storage = new FeatherCache(idbFeatherCacheDriver(60 * 1000 * 5));
 ```
 
-Version of [ts-np-generator](https://github.com/vajahath/generator-ts-np) used: [![used version of ts-np generator](https://img.shields.io/badge/ts--np-v2.0.1-a5a5a5.svg?style=flat-square)](https://github.com/vajahath/generator-ts-np)
+Version of [ts-np-generator](https://github.com/vajahath/generator-ts-np) used: [![used version of ts-np generator](https://img.shields.io/badge/ts--np-v2.0.1-a5a5a5.svg?style=flat-square)](https://github.com/vajahath/generator-ts-np) [![Greenkeeper badge](https://badges.greenkeeper.io/vajahath/feather-cache-indexeddb.svg)](https://greenkeeper.io/)
 
 ## Licence
 
